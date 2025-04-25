@@ -334,7 +334,7 @@ void update()
                  
         }
         if (g_current_scene == g_levelB && level_timer >= 60.0f) {
-            if(num_collected<8){
+            if(num_collected<8 || !B_win){
                 switch_to_scene(g_lose);
                 if (g_current_scene==g_lose){
                     level_timer = 0.0f;
