@@ -312,9 +312,9 @@ void update()
             }
         }
         g_accumulator = delta_time;
-        if (g_current_scene == g_levelA && level_timer >= 4.0f)
+        if (g_current_scene == g_levelA && level_timer >= 40.0f)
         {
-            if(num_collected<1){
+            if(num_collected<12){
                 switch_to_scene(g_lose);
                 if (g_current_scene==g_lose){
                     level_timer = 0.0f;
